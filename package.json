@@ -1,0 +1,39 @@
+{
+  "name": "mmall-fe",
+  "version": "1.0.0",
+  "description": "mmall",
+  "main": "index.js",
+  "scripts": {
+    "dev"        : "WEBPACK_ENV=dev webpack-dev-server --inline --port 8088",
+    "dev_window" : "set WEBPACK_ENV=dev & webpack-dev-server --inline --port 8088",
+    "dist"       : "WEBPACK_ENV=online webpack -g",
+    "dist_window": "set WEBPACK_ENV=online & webpack -g"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryjmmall/mmall-fe.git"
+  },
+  "keywords": [
+    "mmall"
+  ],
+  "author": "renyujuan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryjmmall/mmall-fe/issues"
+  },
+  "homepage": "https://github.com/ryjmmall/mmall-fe#readme",
+  "devDependencies": {
+    "css-loader": "^0.28.4",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "html-webpack-plugin": "^2.28.0",
+    "jquery": "^3.2.1",
+    "style-loader": "^0.18.2",
+    "webpack": "^1.15.0",
+    "webpack-dev-server": "^1.16.5"
+  },
+  "dependencies": {
+    "file-loader": "^0.11.2",
+    "html-loader": "^0.4.5",
+    "url-loader": "^0.5.9"
+  }
+}
