@@ -1,0 +1,17 @@
+/*
+* @Author: liuyiqiang
+* @Date:   2017-06-20 13:50:08
+* @Last Modified by:   liuyiqiang
+* @Last Modified time: 2017-06-20 14:02:37
+*/
+.nav-simple{
+	height: 60px;
+	line-height:60px;
+	border-bottom:1px solid #ddd;
+	background: #fff;
+}
+.logo{
+	font-size:26px;
+	font-weight: bold;
+	color:#c60023;
+}

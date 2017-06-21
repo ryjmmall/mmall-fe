@@ -1,0 +1,30 @@
+/*
+* @Author: liuyiqiang
+* @Date:   2017-06-20 16:32:21
+* @Last Modified by:   liuyiqiang
+* @Last Modified time: 2017-06-20 19:00:04
+*/
+.header .logo{
+	position:absolute;
+	left:55px;
+	top:34px;
+	font-size:36px;
+	color:#c60023;
+	font-weight:bold;
+}
+.header .search-con{
+	padding : 40px 0 30px 250px;
+}
+.header .search-con .search-input{
+	width: 500px;
+	height:40px;
+	line-height: 40px;
+	border: 2px solid #c60023;
+	font-size:15px;
+	padding-left:10px;
+}
+.header .search-con .search-btn{
+	width: 80px;
+	height:44px;
+	position:absolute;
+}

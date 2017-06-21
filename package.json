@@ -4,9 +4,9 @@
   "description": "mmall",
   "main": "index.js",
   "scripts": {
-    "dev"        : "WEBPACK_ENV=dev webpack-dev-server --inline --port 8088",
-    "dev_window" : "set WEBPACK_ENV=dev & webpack-dev-server --inline --port 8088",
-    "dist"       : "WEBPACK_ENV=online webpack -g",
+    "dev": "WEBPACK_ENV=dev webpack-dev-server --inline --port 8088",
+    "dev_window": "set WEBPACK_ENV=dev & webpack-dev-server --inline --port 8088",
+    "dist": "WEBPACK_ENV=online webpack -g",
     "dist_window": "set WEBPACK_ENV=online & webpack -g"
   },
   "repository": {
@@ -33,6 +33,8 @@
   },
   "dependencies": {
     "file-loader": "^0.11.2",
+    "font-awesome": "^4.7.0",
+    "hogan": "^1.0.2",
     "html-loader": "^0.4.5",
     "url-loader": "^0.5.9"
   }

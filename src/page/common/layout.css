@@ -1,0 +1,94 @@
+/*
+* @Author: liuyiqiang
+* @Date:   2017-06-20 12:51:43
+* @Last Modified by:   liuyiqiang
+* @Last Modified time: 2017-06-20 13:30:17
+*/
+/*css reset*/
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #f6f6f6;
+	/*字体默认初始化值*/
+	font:12px/1.5 tahoma,arial,Microsoft YaHei, sans-serif;
+}
+li{
+	list-style: none;
+}
+img{
+	display: block;
+	border : none;
+}
+label{
+	cursor: pointer;
+}
+input[type='checkbox']{
+	cursor: pointer;
+}
+
+/*定宽布局*/
+.w{
+	width:1080px;
+	margin:0 auto;
+	position : relative;
+	/*用来清除浮动*/
+	overflow: hidden;
+}
+/*适应大屏幕*/
+.large .w{
+	width:1600px;
+}
+
+/*全局通用样式 */
+/*隐藏盒子*/
+.hide{
+	display: none;
+}
+/*超链接*/
+.link{
+	color:#999;
+	cursor: pointer;
+	text-decoration: none;
+}
+.link:hover{
+	color:#e80012;
+}
+.link-text{
+	color:#999;
+	text-decoration: none;
+}
+/*btn*/
+.btn{
+	display: inline-block;
+	padding:0 20px;
+	height:40px;
+	line-height:40px;
+	vertical-align: middle;
+	border:none;
+	background: #c60023;
+	font-size:17px;
+	font-weight:bold;
+	color:#fff;
+	text-decoration: none;
+	outline:none;
+	cursor: pointer;
+}
+.btn-mini{
+	height: 25px;
+	line-height: 25px;
+	font-size:12px;
+	padding: 0 10px;
+}
+/*loading*/
+.loading{
+	margin:10px auto;
+	display: block;
+	width:65px;
+	height: 65px;
+	border:1px solid #ddd;
+	border-radius:5px;
+	background: url(../../image/icon/loading.gif) no-repeat;
+	opacity: .6;
+}

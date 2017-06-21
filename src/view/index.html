@@ -1,8 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-	<%= require("html-loader!./layout/html-head.html") %>
+	<head>
+		<%= require("html-loader!./layout/common-head.html") %>
+		<title>ryjmmall平台-<%= htmlWebpackPlugin.options.title%></title>
+	</head>
     <body>
-    	<script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
-    	HELLO RENYUJUAN
+        <%= require("html-loader!./layout/nav.html") %>
+        <%= require("html-loader!./layout/header.html") %>
+        <div class="page-wrap w">
+        	<%= require("html-loader!./layout/nav-side.html") %>
+        	<div class="content with-nav">test</div>
+        </div>
+    	<%= require("html-loader!./layout/footer.html") %>
     </body>
 </html>
