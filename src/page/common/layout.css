@@ -2,7 +2,7 @@
 * @Author: liuyiqiang
 * @Date:   2017-06-20 12:51:43
 * @Last Modified by:   liuyiqiang
-* @Last Modified time: 2017-06-20 13:30:17
+* @Last Modified time: 2017-06-22 15:55:50
 */
 /*css reset*/
 *{
@@ -91,4 +91,23 @@ input[type='checkbox']{
 	border-radius:5px;
 	background: url(../../image/icon/loading.gif) no-repeat;
 	opacity: .6;
+}
+
+/*panel*/
+/* panel */
+.panel{
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #fff;
+}
+.panel .panel-title{
+    padding: 10px;
+    font-size: 14px;
+    color: #666;
+    font-weight: bold;
+    border-bottom: 1px solid #eee;
+}
+.panel .panel-body{
+    padding: 10px;
+    overflow: hidden;
 }

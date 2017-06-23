@@ -2,7 +2,7 @@
 * @Author: liuyiqiang
 * @Date:   2017-06-20 09:34:50
 * @Last Modified by:   liuyiqiang
-* @Last Modified time: 2017-06-20 18:36:18
+* @Last Modified time: 2017-06-23 13:02:09
 */
 
 'use strict';
@@ -40,7 +40,7 @@ var _mm = {
 	},
 	/*统一登录处理*/
 	doLogin	: function(){
-		window.location.href = './login.html?redirect='+  encodeURIComponent(window.location.href);
+		window.location.href = './user-login.html?redirect='+  encodeURIComponent(window.location.href);
 	},
 	/*获取服务端数据接口url*/
 	getServerUrl : function(path){
@@ -50,7 +50,7 @@ var _mm = {
 	getUrlParam : function(name){
 		var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)');
 		var result = window.location.search.substr(1).match(reg);
-		return result ? result[2] : null;
+		return result ? decodeURIComponent(result[2]) : null;
 	},
 	/*渲染HTML模板功能*/
 	renderHtml : function(htmlTemplate, data){
@@ -75,7 +75,7 @@ var _mm = {
 		}
 		/*手机号验证*/
 		if(type === 'phone'){
-			return /^\d{10}$/.test(value);
+			return /^1\d{10}$/.test(value);
 		}
 		/*邮箱验证*/
 		if(type === 'email'){

@@ -2,7 +2,7 @@
 * @Author: liuyiqiang
 * @Date:   2017-06-20 16:32:21
 * @Last Modified by:   liuyiqiang
-* @Last Modified time: 2017-06-20 19:00:04
+* @Last Modified time: 2017-06-22 15:48:11
 */
 .header .logo{
 	position:absolute;
@@ -27,4 +27,15 @@
 	width: 80px;
 	height:44px;
 	position:absolute;
+}
+
+/*面包屑导航*/
+.crumb{
+	margin-bottom: 15px;
+	height:50px;
+	line-height:50px;
+	background: #eee;
+	color:#888;
+	font-size:14px;
+	border-top:2px solid #c60023;
 }

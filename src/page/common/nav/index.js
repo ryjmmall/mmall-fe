@@ -2,7 +2,7 @@
 * @Author: liuyiqiang
 * @Date:   2017-06-20 14:31:17
 * @Last Modified by:   liuyiqiang
-* @Last Modified time: 2017-06-20 16:12:51
+* @Last Modified time: 2017-06-23 13:11:04
 */
 
 'use strict';
@@ -29,7 +29,7 @@ var nav = {
 		});
 		//注册事件
 		$('.js-register').on('click',function(){
-			window.location.href = './register.html';
+			window.location.href = './user-register.html';
 		})
 		// 退出事件
 		$('.js-logout').on('click',function(){
@@ -45,7 +45,7 @@ var nav = {
 	loadUserInfo : function(){
 		// 先检查用户登录状态
 		_user.checkLogin(function(res){
-			$('.nav .not-login').hide().subling('.user .login').show()
+			$('.user.not-login').hide().siblings('.user.login').show()
 				.find('.username').text(res.username);
 		},function(errMsg){
 			//do nothing

@@ -1,0 +1,17 @@
+/*
+* @Author: liuyiqiang
+* @Date:   2017-06-22 12:34:56
+* @Last Modified by:   liuyiqiang
+* @Last Modified time: 2017-06-22 16:05:36
+*/
+/*用户中心样式*/
+.form-line{
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+}
+.form-line .label{
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+}
