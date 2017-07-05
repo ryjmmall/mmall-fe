@@ -2,10 +2,136 @@
 * @Author: liuyiqiang
 * @Date:   2017-06-19 17:55:57
 * @Last Modified by:   liuyiqiang
-* @Last Modified time: 2017-06-19 18:49:17
+* @Last Modified time: 2017-07-03 18:41:30
 */
-body{
-	background: url(../../image/1.jpg);
-	color:#f00;
-	font-size:50px;
+
+/*keywords-list*/
+.keywords-list{
+	float : left;
+	padding: 10px 0;
+	width:240px;
+	height:350px;
+	margin-right:10px;
+	background: #666;
+	color: #fff;
+}
+.keywords-list .keywords-item{
+	height: 35px;
+	line-height: 35px;
+	font-size : 14px;
+	padding-left : 10px;
+}
+.keywords-list .keywords-item:hover{
+	background: #999;
+}
+.keywords-list .keywords-item .link{
+	color : #fff;
+	margin-right : 6px;
+}
+.keywords-list .keywords-item .link:hover{
+	color : #c60023;
+}	
+
+/*banner-con*/
+.banner-con{
+	width : 830px;
+	float : left;
+	height: 370px;
+	background: #ccc;
+	position : relative;
+}
+/*垂直居中loading*/
+.banner-con .loading{
+	position : absolute;
+	top : 50%;
+	left : 50%;
+	transform: translateX(-50%);
+	transform: translateY(-50%);
+}
+.banner-con .banner-img{
+	width: 100%;
+	height: 370px;
+}
+/*prev  next*/
+.banner-con .banner-arrow{
+	position : absolute;
+	top : 50%;
+	margin-top : -25px;
+	width : 30px;
+	height : 50px;
+	line-height: 50px;
+	font-size : 30px;
+	background: #ccc;
+	background: rgba(0,0,0,.2);
+	text-align : center;
+	color : #fff;
+	cursor: pointer;
+}
+.banner-con .banner-arrow.prev{
+	left : 0;
+}
+.banner-con .banner-arrow.next{
+	right : 0;
+}
+.banner-con .banner-arrow:hover{
+	background: #aaa;
+	background: rgba(0,0,0,.5);
+}
+
+/*floor*/
+.floor-wrap .floor-title{
+	font-weight : normal;
+	height : 50px;
+	line-height: 50px;
+	font-size : 20px;
+	color : #d58717;
+	border-bottom : 1px solid #d58717;
+}
+/* 更改各楼层标题颜色 */
+.floor-wrap:nth-child(2) .floor-title{
+    color: #3b838c;
+    border-bottom: 1px solid #3b838c;
+}
+.floor-wrap:nth-child(3) .floor-title{
+    color: #a93931;
+    border-bottom: 1px solid #a93931;
+}
+.floor-wrap:nth-child(4) .floor-title{
+    color: #488bad;
+    border-bottom: 1px solid #488bad;
+}
+.floor-wrap:nth-child(5) .floor-title{
+    color: #642663;
+    border-bottom: 1px solid #642663;
+}
+.floor-wrap .floor-list{
+	overflow: hidden;
+	margin-right : -20px;
+}
+.floor-wrap .floor-list .floor-item{
+	width : 200px;
+	height : 220px;
+	margin : 15px 20px 15px 0;
+	float : left;
+	position : relative;
+	cursor: pointer;
+	background: #fff;
+}
+.floor-wrap .floor-list .floor-item:hover{
+	box-shadow: 1px 1px 7px #ddd;
+}
+.floor-wrap .floor-item .floor-text{
+	position: absolute;
+	top : 12px;
+	left : 20px;
+	color : #555;
+	font-size : 16px;
+}
+.floor-wrap .floor-item .floor-img{
+	position :absolute;
+	right : 15px;
+	bottom : 10px;
+	width : 80%;
+	height : 75%;
+	border : none;
 }

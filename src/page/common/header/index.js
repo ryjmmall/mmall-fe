@@ -2,7 +2,7 @@
 * @Author: liuyiqiang
 * @Date:   2017-06-20 16:32:28
 * @Last Modified by:   liuyiqiang
-* @Last Modified time: 2017-06-21 08:42:59
+* @Last Modified time: 2017-07-03 21:15:14
 */
 
 'use strict';
@@ -11,6 +11,7 @@ var _mm = require('util/mm.js');
 /*通用页面头部*/
 var header = {
 	init : function(){
+		this.onload();
 		this.bindEvent();
 	},
 	//input回填

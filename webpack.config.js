@@ -2,7 +2,7 @@
 * @Author: liuyiqiang
 * @Date:   2017-06-19 15:56:05
 * @Last Modified by:   liuyiqiang
-* @Last Modified time: 2017-06-23 09:18:42
+* @Last Modified time: 2017-07-05 10:13:37
 */
 
 'use strict';
@@ -12,12 +12,12 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 /*获取html模板参数*/
 var getHtmlConfig = function(name,title){
     return {
-            template : './src/view/'+ name +'.html',
-            filename : 'view/'+ name +'.html',
-            inject : true,
-            hash : true,
-            chunks : ['common', name],
-            title : title
+            template    : './src/view/'+ name +'.html',
+            filename    : 'view/'+ name +'.html',
+            inject      : true,
+            hash        : true,
+            chunks      : ['common', name],
+            title       : title
         }
 }
 /*判断是开发模式还是线上模式*/
@@ -26,6 +26,8 @@ var config = {
      entry: {
         "common"                : ['./src/page/common/index.js'],
      	"index"                 : ['./src/page/index/index.js'],
+        "list"                  : ['./src/page/list/index.js'],
+        "detail"                : ['./src/page/detail/index.js'],
      	"user-login"            : ['./src/page/user-login/index.js'],
         "user-register"         : ['./src/page/user-register/index.js'],
         "user-center"           : ['./src/page/user-center/index.js'],
@@ -53,6 +55,8 @@ var config = {
         new ExtractTextPlugin("css/[name].css"),
         // html模板处理
         new HtmlWebpackPlugin(getHtmlConfig('index','首页')),
+        new HtmlWebpackPlugin(getHtmlConfig('list','商品列表页')),
+        new HtmlWebpackPlugin(getHtmlConfig('detail','商品详情页')),
         new HtmlWebpackPlugin(getHtmlConfig('user-login','用户登录')),
         new HtmlWebpackPlugin(getHtmlConfig('result','操作结果')),
         new HtmlWebpackPlugin(getHtmlConfig('user-register','用户注册')),

@@ -1,0 +1,40 @@
+/*
+* @Author: liuyiqiang
+* @Date:   2017-07-03 23:22:23
+* @Last Modified by:   liuyiqiang
+* @Last Modified time: 2017-07-04 10:13:25
+*/
+.pg-content{
+	text-align: center;
+	color : #333;
+}
+.pg-content .pg-item{
+	height: 30px;
+	line-height : 30px;
+	display: inline-block;
+	padding : 0 15px;
+	margin : 0 2px;
+	border : 1px solid #ccc;
+	background: #eee;
+	cursor: pointer;
+	-moz-user-select : none;
+    -webkit-user-select : none;
+    -ms-user-select : none;
+    user-select : none;
+}
+.pg-content .pg-item.disabled{
+	background: none;
+	color : #ccc;
+	cursor : auto;
+}
+.pg-content .pg-item.active{
+	background: #c60023;
+	border : 1px solid #c60023;
+	color : #fff;
+	cursor : auto;
+}
+.pg-content .pg-total{
+	margin : 0 10px;
+	height : 30px;
+	line-height: 30px;
+}

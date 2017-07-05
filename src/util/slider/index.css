@@ -1,0 +1,43 @@
+/*
+* @Author: liuyiqiang
+* @Date:   2017-07-03 17:14:53
+* @Last Modified by:   liuyiqiang
+* @Last Modified time: 2017-07-03 18:44:54
+*/
+.banner { 
+	position: relative; 
+	overflow: auto; 
+}
+.banner li { 
+	list-style: none; 
+}
+.banner ul li { 
+	float: left; 
+}
+/*dots*/
+/* dots*/
+.banner .dots{
+	position : absolute;
+	left : 0;
+	right : 0;
+	bottom: 20px;
+	text-align: center;
+}
+.banner-con .dots li{
+	display: inline-block;
+	width : 10px;
+	height : 10px;
+	text-indent: -9999em;
+	margin : 0 4px;
+	border : 2px solid #fff;
+	border-radius : 6px;
+	cursor : pointer;
+	opacity : .4;
+	-webkit-transition: background .5s, opacity .5s;
+    -moz-transition: background .5s, opacity .5s;
+    transition: background .5s, opacity .5s;
+}
+.banner .dots li.active {
+    background: #fff;
+    opacity: 1;
+}

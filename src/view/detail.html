@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<%= require("html-loader!./layout/common-head.html") %>
+		<title>ryjmmall平台-<%= htmlWebpackPlugin.options.title%></title>
+	</head>
+    <body>
+        <%= require("html-loader!./layout/nav.html") %>
+        <%= require("html-loader!./layout/header.html") %>
+        <!-- 面包屑导航 -->
+        <div class="crumb">
+            <div class="w">
+                <div class="crumb-con">
+                    <a class="link" href="./index.html">MMall</a>
+                    <span>>></span>
+                    <span class="link-text"><%= htmlWebpackPlugin.options.title%></span>
+                </div>
+            </div>
+        </div>
+        <div class="page-wrap w">
+        	<!-- 商品介绍 -->
+        	<div class="intro-wrap">
+        		<!-- 左侧图片区域 -->
+        		<div class="p-img-con">
+        			<!-- 大图 -->
+        			<div class="main-img-con">
+        				<img class="main-img" src="http://img.happymmall.com/dce7d4e1-98f2-485c-a365-e70015c780a1.jpg">
+        			</div>
+        			<!-- 小图列表 -->
+        			<ul class="p-img-list">
+        			    <li class="p-img-item">
+        					<img class="p-img" src="http://img.happymmall.com/c2ffb9ae-63d7-4710-a67c-cb846401b841.jpg" />
+        				</li>
+        				<li class="p-img-item">
+        					<img class="p-img" src="http://img.happymmall.com/c2ffb9ae-63d7-4710-a67c-cb846401b841.jpg" />
+        				</li>
+        				<li class="p-img-item">
+        					<img class="p-img" src="http://img.happymmall.com/c2ffb9ae-63d7-4710-a67c-cb846401b841.jpg" />
+        				</li>
+        				<li class="p-img-item">
+        					<img class="p-img" src="http://img.happymmall.com/c2ffb9ae-63d7-4710-a67c-cb846401b841.jpg" />
+        				</li>
+        				<li class="p-img-item">
+        					<img class="p-img" src="http://img.happymmall.com/c2ffb9ae-63d7-4710-a67c-cb846401b841.jpg" />
+        				</li>
+        			</ul>
+        		</div>
+        		<!-- 右侧文字介绍 -->
+        		<div class="p-info-con">
+        			<!-- tilte -->
+        			<h1 class="p-name">XXXXXXXXXXXXXXXXXXhh</h1>
+        			<!-- subtitle -->
+        			<div class="p-subtitle">XXXXXXXXXXXXXXXX</div>
+        			<div class="p-info-item  	 	">
+        				<span class="label">价格：</span>
+        				<span class="info">￥ 9999</span>
+        			</div>
+        			<div class="p-info-item p-stock-con">
+        				<span class="label">库存:</span>
+        				<span class="info">9999</span>
+        			</div>
+        			<div class="p-info-item p-count-con">
+        				<span class="label">数量：</span>
+        				<input class="p-count" readonly="" value="1"/>
+        				<span class="p-count-btn plus">+</span>
+        				<span class="p-count-btn minus">-</span>
+        			</div>
+        			<div class="p-info-item">
+        				<span class="btn btn-submit">加入购物车</span>
+        			</div>
+        		</div>
+        	</div>
+        	<!-- 商品详情展示 -->
+        	<div class="detail-wrap">
+        		<div class="detail-tab-con">
+			        <ul class="tab-list">
+			            <li class="tab-item active">详细描述</li>
+			        </ul>
+			    </div>
+			    <div class="detail-con">
+			    </div>
+        	</div>
+        </div>
+    	<%= require("html-loader!./layout/footer.html") %>
+    </body>
+</html>

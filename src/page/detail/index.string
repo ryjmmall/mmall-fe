@@ -1,0 +1,53 @@
+<!-- 商品介绍 -->
+<div class="intro-wrap">
+	<!-- 左侧图片区域 -->
+	<div class="p-img-con">
+		<!-- 大图 -->
+		<div class="main-img-con">
+			<img class="main-img" src="{{imageHost}}{{mainImage}}">
+		</div>
+		<!-- 小图列表 -->
+		<ul class="p-img-list">
+                      {{#subImages}}
+		      <li class="p-img-item">
+		          <img class="p-img" src="{{imageHost}}{{.}}" alt="{{name}}"/>
+		      </li>
+                      {{/subImages}}
+		</ul>
+	</div>
+	<!-- 右侧文字介绍 -->
+	<div class="p-info-con">
+		<!-- tilte -->
+		<h1 class="p-name">{{name}}</h1>
+		<!-- subtitle -->
+		<div class="p-subtitle">{{subtitle}}</div>
+		<div class="p-info-item  	 	">
+			<span class="label">价格：</span>
+			<span class="info">￥ {{price}}</span>
+		</div>
+		<div class="p-info-item p-stock-con">
+			<span class="label">库存:</span>
+			<span class="info">{{stock}}</span>
+		</div>
+		<div class="p-info-item p-count-con">
+			<span class="label">数量：</span>
+			<input class="p-count" readonly="" value="1"/>
+			<span class="p-count-btn plus">+</span>
+			<span class="p-count-btn minus">-</span>
+		</div>
+		<div class="p-info-item">
+			<span class="btn btn-submit">加入购物车</span>
+		</div>
+	</div>
+</div>
+<!-- 商品详情展示 -->
+<div class="detail-wrap">
+	<div class="detail-tab-con">
+	        <ul class="tab-list">
+	            <li class="tab-item active">详细描述</li>
+	        </ul>
+	</div>
+	<div class="detail-con">
+                {{{detail}}}
+	</div>
+</div>

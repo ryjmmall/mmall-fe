@@ -2,16 +2,26 @@
 * @Author: liuyiqiang
 * @Date:   2017-06-19 15:59:48
 * @Last Modified by:   liuyiqiang
-* @Last Modified time: 2017-06-21 10:16:14
+* @Last Modified time: 2017-07-03 18:17:07
 */
 
 'use strict';
+require('./index.css');
 require('page/common/nav/index.js');
 require('page/common/header/index.js');
-var navSide = require('page/common/nav-side/index.js');
-
-//模块化引入工具类
+require('util/slider/index.js');
+var templateBanner = require('./banner.string');
 var _mm = require('util/mm.js');
-navSide.init({
-	name : 'pass-update'
-});
+
+$(function(){
+	var bannerHtml = _mm.renderHtml(templateBanner);
+	$('.banner-con').html(bannerHtml);
+	var $slider = $('.banner').unslider({
+		dots : true
+	});
+	$('.banner-con .banner-arrow').on('click',function(){
+		var forward = $(this).hasClass('prev') ? 'prev' : 'next';
+		$slider.data('unslider')[forward]();
+	})
+})
+

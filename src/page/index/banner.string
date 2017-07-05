@@ -1,0 +1,36 @@
+<div class="banner">
+    <ul>
+        <li>
+        	<a class="link" target="_blank" href="./list.html?categoryId=100021">
+        		<img src="../../image/banner/banner1.jpg" class="banner-img">
+        	</a>
+        </li>
+        <li>
+        	<a class="link" target="_blank" href="./list.html?categoryId=100030">
+        		<img src="../../image/banner/banner2.jpg" class="banner-img">
+        	</a>
+        </li>
+        <li>
+        	<a class="link" target="_blank" href="./list.html?categoryId=100016">
+        		<img src="../../image/banner/banner3.jpg" class="banner-img">
+        	</a>
+        </li>
+        <li>
+        	<a class="link" target="_blank" href="./list.html?categoryId=100001">
+        		<img src="../../image/banner/banner4.jpg" class="banner-img">
+        	</a>
+        </li>
+        <li>
+        	<a class="link" target="_blank" href="./list.html?categoryId=100021">
+        		<img src="../../image/banner/banner5.jpg" class="banner-img">
+        	</a>
+        </li>
+    </ul>
+    <!-- 上一张 下一张 -->
+    <div class="banner-arrow prev">
+    	<i class="fa fa-angle-left"></i>
+    </div>
+    <div class="banner-arrow next">
+    	<i class="fa fa-angle-right"></i>
+    </div>
+</div>

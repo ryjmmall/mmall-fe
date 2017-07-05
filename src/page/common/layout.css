@@ -2,7 +2,7 @@
 * @Author: liuyiqiang
 * @Date:   2017-06-20 12:51:43
 * @Last Modified by:   liuyiqiang
-* @Last Modified time: 2017-06-22 15:55:50
+* @Last Modified time: 2017-07-03 16:19:45
 */
 /*css reset*/
 *{
@@ -23,6 +23,9 @@ img{
 }
 label{
 	cursor: pointer;
+}
+input{
+	outline: none;
 }
 input[type='checkbox']{
 	cursor: pointer;
