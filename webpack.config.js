@@ -2,7 +2,7 @@
 * @Author: liuyiqiang
 * @Date:   2017-06-19 15:56:05
 * @Last Modified by:   liuyiqiang
-* @Last Modified time: 2017-07-05 10:13:37
+* @Last Modified time: 2017-07-05 16:38:31
 */
 
 'use strict';
@@ -28,6 +28,7 @@ var config = {
      	"index"                 : ['./src/page/index/index.js'],
         "list"                  : ['./src/page/list/index.js'],
         "detail"                : ['./src/page/detail/index.js'],
+        "cart"                  : ['./src/page/cart/index.js'],
      	"user-login"            : ['./src/page/user-login/index.js'],
         "user-register"         : ['./src/page/user-register/index.js'],
         "user-center"           : ['./src/page/user-center/index.js'],
@@ -57,6 +58,7 @@ var config = {
         new HtmlWebpackPlugin(getHtmlConfig('index','首页')),
         new HtmlWebpackPlugin(getHtmlConfig('list','商品列表页')),
         new HtmlWebpackPlugin(getHtmlConfig('detail','商品详情页')),
+        new HtmlWebpackPlugin(getHtmlConfig('cart','我的购物车')),
         new HtmlWebpackPlugin(getHtmlConfig('user-login','用户登录')),
         new HtmlWebpackPlugin(getHtmlConfig('result','操作结果')),
         new HtmlWebpackPlugin(getHtmlConfig('user-register','用户注册')),
