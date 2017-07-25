@@ -2,7 +2,7 @@
 * @Author: liuyiqiang
 * @Date:   2017-06-19 15:56:05
 * @Last Modified by:   liuyiqiang
-* @Last Modified time: 2017-07-05 16:38:31
+* @Last Modified time: 2017-07-25 18:06:41
 */
 
 'use strict';
@@ -29,6 +29,9 @@ var config = {
         "list"                  : ['./src/page/list/index.js'],
         "detail"                : ['./src/page/detail/index.js'],
         "cart"                  : ['./src/page/cart/index.js'],
+        "order-confirm"         : ['./src/page/order-confirm/index.js'],
+        "order-list"            : ['./src/page/order-list/index.js'],
+        'order-detail'          : ['./src/page/order-detail/index.js'],
      	"user-login"            : ['./src/page/user-login/index.js'],
         "user-register"         : ['./src/page/user-register/index.js'],
         "user-center"           : ['./src/page/user-center/index.js'],
@@ -59,6 +62,9 @@ var config = {
         new HtmlWebpackPlugin(getHtmlConfig('list','商品列表页')),
         new HtmlWebpackPlugin(getHtmlConfig('detail','商品详情页')),
         new HtmlWebpackPlugin(getHtmlConfig('cart','我的购物车')),
+        new HtmlWebpackPlugin(getHtmlConfig('order-confirm','订单确认')),
+        new HtmlWebpackPlugin(getHtmlConfig('order-list','订单列表')),
+        new HtmlWebpackPlugin(getHtmlConfig('order-detail','订单详情')),
         new HtmlWebpackPlugin(getHtmlConfig('user-login','用户登录')),
         new HtmlWebpackPlugin(getHtmlConfig('result','操作结果')),
         new HtmlWebpackPlugin(getHtmlConfig('user-register','用户注册')),

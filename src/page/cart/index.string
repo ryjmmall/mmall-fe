@@ -83,7 +83,7 @@
 	<div class="submit-con">
 		<span class="label">总价：</span>
 		<span class="submit-total">￥{{cartTotalPrice}}</span>
-                <span class="btn btn-submit">去结算</span>
+        <span class="btn btn-submit">去结算</span>
 	</div>
 </div>
 {{/notEmpty}}

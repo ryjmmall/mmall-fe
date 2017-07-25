@@ -1,0 +1,189 @@
+/*
+* @Author: liuyiqiang
+* @Date:   2017-07-06 18:09:24
+* @Last Modified by:   liuyiqiang
+* @Last Modified time: 2017-07-07 12:49:28
+*/
+
+/*地址部分*/
+.address-con{
+	overflow: hidden;
+}
+.address-item,
+.address-new{
+	margin : 20px 20px 0 0 ;
+	width : 200px;
+	float : left;
+	padding : 5px;
+	border : 3px dashed #ccc;
+}
+.address-item:hover,
+.address-new:hover{
+	background: #fafafa;
+}
+.address-item.active{
+	border : 3px dashed #c60023;
+}
+.address-item .address-title{
+	color : #666;
+	height : 20px;
+	line-height : 20px;
+	border-bottom : 1px solid #eee;
+	overflow: hidden;
+/*	margin-bottom : 5px;*/
+}
+.address-item .address-detail{
+	margin-top : 5px;
+	color : #666;
+	height : 40px;
+	line-height : 20px;
+	overflow: hidden;
+}
+.address-item .address-opera{
+	text-align: right;
+	visibility: hidden;
+}
+.address-item:hover .address-opera{
+	visibility : visible;
+}
+.address-item .address-opera .link{
+	margin-left : 5px;
+}
+.address-new{
+	text-align: center;
+	color : #ccc;
+	padding : 13px 0;
+}
+.address-new .fa{
+	line-height: 50px;
+	font-size: 50px;
+}
+
+/*商品部分*/
+.product-table{
+	margin : 15px 0;
+	border-collapse: collapse;
+	width : 100%;
+	color : #666;
+}
+.product-table .cell-img{
+	width : 10%;
+}
+.product-table .cell-img .p-img{
+	width : 80px;
+	height : 80px;
+	border : 1px solid #eee;
+	margin: 5px 0;
+}
+.product-table .cell-info{
+	width : 30%;
+	text-align: left;
+}
+.product-table .cell-price,
+.product-table .cell-count,
+.product-table .cell-total{
+	width : 20%;
+	text-align: center;
+}
+
+.order-submit{
+	text-align: right;
+	background: #eee;
+}
+.order-submit .order-total{
+	font-size: 16px;
+	font-weight: bold;
+	color : #c60023;
+	margin-right : 10px;
+	vertical-align: middle;
+}
+.order-submit .btn-submit{
+	width : 100px;
+	height : 50px;
+	line-height : 50px;
+	text-align: center;
+}
+
+/* 错误信息 */
+.err-tip{
+    height: 60px;
+    line-height: 60px;
+    color: #f60;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    background: #eee;
+}
+
+/*弹出层*/
+.modal{
+	position : fixed;
+	left :0;
+	top : 0;
+	right : 0;
+	bottom : 0;
+	background: #ccc;
+	background: rgba(0,0,0,.4);
+	z-index : 1000;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.modal .modal-con{
+	width : 700px;
+	margin : 50px auto;
+	background: #fff;
+	border-radius: 2px;
+}
+
+.modal-con .modal-con-header{
+	position : relative;
+	padding : 15px;
+	border-bottom : 1px solid #eee;
+	color : #666;
+}
+.modal-con .modal-con-header .modal-con-title{
+	font-size : 14px;
+}
+.modal-con .modal-con-header .close{
+	position : absolute;
+	padding : 10px;
+	top : 10px;
+	right : 10px;
+	cursor: pointer;
+	z-index : 1001;
+}
+.modal-con-body{
+	padding : 15px;
+}
+.form .form-line{
+	margin : 5px 0 ;
+	overflow: hidden;
+}
+.form .form-line .label{
+	display: block;
+	width : 85px;
+	height : 30px;
+	line-height : 30px;
+	text-align: right;
+	float :left;
+	margin-right : 10px;
+	cursor: pointer;
+}
+.form .form-line .require{
+	color : #c60023;
+}
+.form .form-line .form-item{
+	height : 30px;
+	line-height : 30px;
+	text-align: left;
+	padding : 0 5px;
+	outline: none;
+	margin-right : 10px;
+}
+.form .form-line .btn{
+	margin-left : 95px;
+	height : 30px;
+	line-height : 30px;
+	text-align: center;
+	font-size : 14px;
+}

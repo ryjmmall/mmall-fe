@@ -3,7 +3,7 @@
 * @Author: liuyiqiang
 * @Date:   2017-07-05 16:36:58
 * @Last Modified by:   liuyiqiang
-* @Last Modified time: 2017-07-06 09:10:48
+* @Last Modified time: 2017-07-06 18:21:34
 */
 
 'use strict';
@@ -123,7 +123,15 @@ var page = {
 				}	
 			}
 		});
-
+		//提交购物车
+		$(document).on('click','.btn-submit',function(){
+			//当购物车总价大于0时，可以提交
+			if(_this.data.cartInfo && _this.data.cartInfo.cartTotalPrice > 0){
+				window.location.href = './order-confirm.html';
+			}else{
+				_mm.errorTips('请选择商品再提交');
+			}
+		});
 	},
 	deleteCartProduct : function(productIds){
 		var _this = this;

@@ -1,0 +1,55 @@
+/*
+* @Author: liuyiqiang
+* @Date:   2017-07-07 18:24:17
+* @Last Modified by:   liuyiqiang
+* @Last Modified time: 2017-07-25 17:10:06
+*/
+.product-table{
+	margin : 15px 0;
+	border-collapse: collapse;
+	width : 100%;
+	color : #666;
+}
+.product-table .table-cell{
+	border-bottom : 1px solid #eee;
+}
+.product-table.header{
+	height : 40px;
+	line-height: 40px;
+	background: #eee;
+}
+.product-table .cell-img{
+	width : 10%;
+}
+.product-table .cell-img .p-img{
+	width : 80px;
+	height : 80px;
+	border : 1px solid #eee;
+	margin: 5px 0;
+}
+.product-table .cell-info{
+	width : 30%;
+	text-align: left;
+}
+.product-table .cell-price,
+.product-table .cell-count,
+.product-table .cell-total{
+	width : 20%;
+	text-align: center;
+}
+
+.product-table .order-info{
+	background: #eee;
+	padding : 10px;
+	color : #999;
+}
+.product-table .order-info .order-text{
+	margin-right: 25px;
+}
+.product-table .order-info .order-total{
+	font-weight : bold;
+	color : #c60023;
+}
+.product-table .order-info .order-detail{
+	float : right;
+}

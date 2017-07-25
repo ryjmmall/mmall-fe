@@ -1,0 +1,59 @@
+<div class="modal close">
+    <div class="modal-con">
+        <div class="modal-con-header">
+            {{#isUpdate}}
+            <h1 class="modal-con-title">更新地址</h1>
+            {{/isUpdate}}
+            {{^isUpdate}}
+            <h1 class="modal-con-title">使用新地址</h1>
+            {{/isUpdate}}
+            <i class="close fa fa-close"></i>
+        </div>
+        <div class="modal-con-body">
+            <div class="form">
+                <div class="form-line">
+                    <label class="label" for="">
+                        <span class="require">*</span>收件人姓名：
+                    </label>
+                    <input class="form-item" type="text" id="receiver-name" 
+                            placeholder="请输入收件人姓名" value="{{data.receiverName}}"/>
+                </div>
+                <div class="form-line">
+                    <label class="label" for="receiver-province">
+                        <span class="require">*</span>所在城市：
+                    </label>
+                    <select class="form-item" id='receiver-province'>
+                        <option value="">请选择</option>
+                    </select>
+                    <select class="form-item" id='receiver-city'>
+                        <option value="">请选择</option>
+                    </select>
+                </div>
+                <div class="form-line">
+                    <label class="label" for="receiver-address">
+                        <span class="require">*</span>详细地址：
+                    </label>
+                    <input class="form-item" type="text" id="receiver-address" placeholder="请输入详细地址"    value="{{data.receiverAddress}}">
+                </div>
+                <div class="form-line">
+                    <label class="label" for="receiver-phone">
+                        <span class="require">*</span>收件人手机：
+                    </label>
+                    <input class="form-item" type="text" id="receiver-phone" 
+                            placeholder="请输入11位手机号码" value="{{data.receiverPhone}}">
+                </div>
+                <div class="form-line">
+                    <label class="label" for="receiver-zip">
+                        <span class="require">*</span>邮政编码：
+                    </label>
+                    <input class="form-item" type="text" id="receiver-zip" 
+                            placeholder="如 100000" value="{{data.receiverZip}}">
+                </div>
+                <div class="form-line">
+                    <input type="hidden" id="receiver-id" data-id="{{data.id}}"/>
+                    <span class="btn address-submit">保存收获地址</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
